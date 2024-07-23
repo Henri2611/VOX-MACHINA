@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HOTEL</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="sidebar" id="sidebar">
+    <a href="#">Home</a>
+    <a href="rooms.html">Rooms</a>
+    <a href="amenities2.html">Amenities</a>
+    <a href="dining.html">Dining</a>
+    <a href="gallery2.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+    <a href="booking.html">Booking</a>
+  </div>
+
+  <div class="menu-toggle" onclick="toggleSidebar()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <div class="content">
+    <h1>VOX MACHINA</h1>
+    <p class="info">We provide the best experience</p>
+  </div>
+
+  <script>
+    function toggleSidebar() {
+      var sidebar = document.getElementById("sidebar");
+      sidebar.classList.toggle("active");
+    }
+  </script>
+</body>
+</html>
