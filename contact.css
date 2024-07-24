@@ -1,0 +1,106 @@
+body {
+  font-family: cursive;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  min-height: 100vh;
+  background-color: rgb(251, 233, 233);
+}
+
+.sidebar {
+
+  background-color: rgb(238, 174, 55);
+  font-family: arial;
+  color: #fff;
+  padding: 30px ;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  
+}
+
+.sidebar h2 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.sidebar a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  padding: 20px 10px;
+  font-size: 18px;
+}
+
+.sidebar a:hover {
+  background-color: #575757;
+}
+
+.content {
+ 
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-section {
+  padding: 20px;
+  background-color: rgb(251, 233, 233);
+}
+
+.contact-section h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.contact-section img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.contact-section p {
+  font-size: 16px;
+}
+
+.contact-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-section li {
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+.contact-section a {
+  color: #000;
+  text-decoration: none;
+}
+
+.contact-section a:hover {
+  text-decoration: underline;
+}
+
+.social-media img {
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+}
+
+@media (max-width: 768px) {
+  body {
+      flex-direction: column;
+  }
+
+  .sidebar {
+      width: 100%;
+      padding: 15px;
+  }
+
+  .content {
+      padding-top: 20px;
+  }
+}

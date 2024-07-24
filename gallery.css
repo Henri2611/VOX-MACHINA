@@ -1,0 +1,166 @@
+*{
+  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+ 
+}
+.pht{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+
+body {
+  background-image: url(images/lobby-with-bokeh-effect_1203-623.jpg);
+  background-size:cover;
+  font-family: cursive;
+
+}
+.container {
+  display: flex;
+  flex-wrap:wrap;
+  width: 80%;
+  max-width: 800px;
+  gap: 5px;
+  margin-top: 10px;
+  margin-left: 250px;
+}
+.container img {
+    flex: 1 1 calc(30% - 10px); /* Each image takes 50% width minus the gap */
+    object-fit: cover; /* Ensure the images cover their allocated space without stretching */
+    width: calc(50% - 10px);
+    height: calc(50vw - 20px); /* Adjust height based on viewport width */
+    max-height: 40vh; /* Ensure images don't exceed a maximum height */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    box-shadow: 5px 10px 18px #131313;
+
+}
+.container img:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+button{
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: transparent;
+  color: white;
+  border: 2px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 620px;
+  margin-top: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+button:hover{
+  background-color: orange;
+  color: white;
+}
+@media (max-width: 600px) {
+  body {
+    padding: 20px;
+    background-size: contain;
+  }
+
+  .pht p {
+    font-size: 1em;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .container {
+    width: 100%;
+    margin-left: 0;
+    padding: 10px;
+  }
+
+  .container img {
+    flex: 1 1 calc(100% - 10px);
+    width: calc(100% - 10px);
+    height: calc(50vw - 20px);
+    max-height: 50vh;
+  }
+
+  button {
+    padding: 10px;
+    font-size: 14px;
+    margin-left: 0;
+    margin-top: 10px;
+    width: 100%;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  body {
+    padding: 30px;
+    background-size: cover;
+  }
+
+  .pht p {
+    font-size: 1.2em;
+    text-align: center;
+    padding: 15px;
+  }
+
+  .container {
+    width: 90%;
+    max-width: 600px;
+    margin-left: 5%;
+  }
+
+  .container img {
+    flex: 1 1 calc(45% - 10px);
+    width: calc(45% - 10px);
+    height: calc(40vw - 20px);
+    max-height: 45vh;
+  }
+
+  button {
+    padding: 12px;
+    font-size: 16px;
+    margin-left: 0;
+    margin-top: 15px;
+    width: 80%;
+  }
+}
+
+/* @media (min-width: 1025px) {
+  body {
+    padding: 50px;
+    background-size: cover;
+  }
+
+  .pht p {
+    font-size: 1.5em;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .container {
+    width: 80%;
+    max-width: 800px;
+    margin-left: 10%;
+  }
+
+  .container img {
+    flex: 1 1 calc(30% - 10px);
+    width: calc(30% - 10px);
+    height: calc(30vw - 20px);
+    max-height: 40vh;
+  }
+
+  button {
+    padding: 15px;
+    font-size: 18px;
+    margin-left: 10%;
+    margin-top: 20px;
+    width: 60%;
+  } */
+
+
